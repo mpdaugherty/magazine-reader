@@ -16,3 +16,8 @@ Windows: http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwi
 
     git clone git@github.com:mpdaugherty/magazine-reader.git
     cd magazine-reader
+
+## Install all our gems (including Rails, etc.)
+
+   gem install bundler
+   bundle install
