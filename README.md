@@ -8,8 +8,8 @@ Windows: http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwi
 
 ## Install our Ruby version and set up our gemset
 
-    rvm install ruby-1.9.3-p327 --verify-downloads 1
-    rvm use ruby-1.9.3-p327
+    rvm install ruby-1.9.3-p286 --verify-downloads 1
+    rvm use ruby-1.9.3-p286
     rvm gemset create magreader
 
 ## Clone the repository and CD into it, then say Yes to RVM

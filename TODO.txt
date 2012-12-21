@@ -1,4 +1,7 @@
-* TODO Decide correct ruby version & set up RVM
+* DONE Decide correct ruby version & set up RVM
+  CLOSED: [2012-12-21 Fri 17:49]
+=> Picked newest verion, 1.9.3-p327, but that didn't work on my machine, so switched to p286
+
 * TODO Initialize Rails App
 * TODO Install tools
 * TODO Plan basic functionality & architecture split

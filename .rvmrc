@@ -1,2 +1,2 @@
 # Use the most recent ruby version available
-rvm use ruby-1.9.3-p327@magreader
+rvm use ruby-1.9.3-p286@magreader
