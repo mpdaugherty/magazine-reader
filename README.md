@@ -4,6 +4,7 @@ magazine-reader
 ## Install Ruby Version Manager
 
 https://rvm.io/rvm/install/
+
 Windows: http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwin-on-windows/
 
 ## Install our Ruby version and set up our gemset
@@ -19,5 +20,5 @@ Windows: http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwi
 
 ## Install all our gems (including Rails, etc.)
 
-   gem install bundler
-   bundle install
+    gem install bundler
+    bundle install
