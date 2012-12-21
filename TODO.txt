@@ -1,0 +1,4 @@
+* TODO Decide correct ruby version & set up RVM
+* TODO Initialize Rails App
+* TODO Install tools
+* TODO Plan basic functionality & architecture split
