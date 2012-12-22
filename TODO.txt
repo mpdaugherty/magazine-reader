@@ -6,4 +6,73 @@
   CLOSED: [2012-12-22 Sat 00:17]
 * TODO Install tools
 HAML, SASS, CoffeeScript
-* TODO Plan basic functionality & architecture split
+* DONE Plan basic functionality & architecture split
+  SCHEDULED: <2012-12-22 Sat> CLOSED: [2012-12-22 Sat 09:17]
+Didn't get a chance to work on this on Friday; had other work and some errands to run...
+
+So, how about this - we first make a standard HTML app, then we upgrade it to a one-page HTML5 app.
+
+Backend needs to store stories, reviews, users, and status of whether a user has read a certain story.  Secondarily, it can have a list of magazines that we know how to read.  Perhaps we can even keep track of story locations, like Kindle does, so if a user leaves an story and comes back later, they can start at the same point.  And that could lead us to bookmarks and notes.  But all that is for a later point.
+
+Front end needs to be able to display a list of available magazines, a list of available stories, display a story, ask for a 1-5 rating for the story, and ask for a review of a story.  Users should be able to log in, log out, view unread stories, view their top-rated stories.
+
+Design for displaying a story needs to be very clean, so we may want to do a little research on the most readable fonts and colors.
+
+Potential security concern - if we pull HTML directly off of another website and display it to our users, the other site could potentially sneak some javascript or something malicious onto our site.  Perhaps it will be best to parse their articles and rewrite them with our own markup during the import stage.
+
+So, tasks:
+
+* TODO Look for Gems that we can reuse
+
+** There must be at least some gems for logging users in and out.
+
+* Set up database models & initial RESTful views
+
+** TODO Story
+Don't forget - stories often have a featured image as well as their text.
+** TODO Review
+** TODO Rating
+** TODO User
+** TODO StoryReadStatus
+
+* TODO Set up User sign up, log in, log out
+
+* Create custom views & update controllers
+
+** TODO A single page to display a story & include a review form.
+When the user opens this page, mark the story as read.  This should take over the "show" controller for Story.
+
+Something to think about: Should we let people read stories while they are logged out?  If so, this page will need to not show the review form when they read the story; perhaps it can show a sign up button instead.
+
+** TODO Homepage
+
+*** TODO When logged in, it should show a list of storied that the user has not read yet
+*** TODO When logged out, show a list of all available stories
+
+** TODO List of my top-rated stories
+
+* Stylesheets
+
+** TODO Update the style of the story display page
+This is the most important page, and our site's style should be based off of this.  What is the best option for reading?
+
+I have an account at WebINK.com, which hosts lots of great font options.
+
+** TODO Update the style of the rest of the site
+Probably want to keep it very plain so the emphasis is on reading the stories.
+
+* Importing stories
+
+** TODO Build a RAKE task to import from lightspeed magazine
+We can run this as a rake task which goes to their site, looks for unknown stories, and imports them.  They update once per week, so we can just run it every monday with some automation.
+
+Potential security concern - if we pull HTML directly off of another website and display it to our users, the other site could potentially sneak some javascript or something malicious onto our site.  Perhaps it will be best to parse their articles and rewrite them with our own markup during the import stage.
+
+* Customization
+
+** TODO Give the user a choice of fonts & color schemes; some people may like white-on-black, others may like off-white.  Allow them to save their preferences.
+
+* Advanced
+
+** TODO Make articles display in "pages" and allow flipping pages from right to left when reading.
+** Other stuff that we may think of...
