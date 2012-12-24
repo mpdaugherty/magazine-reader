@@ -36,3 +36,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'haml', '3.1.7'
