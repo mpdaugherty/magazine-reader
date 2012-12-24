@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20121224040753) do
 
   create_table "magazines", :force => true do |t|
-    t.string   "title"
+    t.string   "name"
     t.string   "website"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
