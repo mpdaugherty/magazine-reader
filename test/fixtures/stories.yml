@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: 
+  author: 
+  link: 
+  published_at: 
+  text: 
+  magazine: 
+
+two:
+  title: 
+  author: 
+  link: 
+  published_at: 
+  text: 
+  magazine: 

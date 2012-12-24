@@ -1,4 +1,7 @@
 MagazineReader::Application.routes.draw do
+  resources :stories
+
+
   resources :magazines
 
 

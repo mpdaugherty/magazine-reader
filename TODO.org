@@ -48,13 +48,14 @@ cloud provider like Amazon S3.
 My plan now is to set up all our models without images first, then add
 images last.
 
-** TODO Story
+** DONE Story
+   CLOSED: [2012-12-24 Mon 12:23]
 Don't forget - stories often have a featured image as well as their text.
 
 Title
 Author
 Link
-Published Date
+Published At (Date)
 Text
 Image (should we download this image?)
 Magazine

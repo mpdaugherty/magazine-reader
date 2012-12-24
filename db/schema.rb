@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121224031416) do
+ActiveRecord::Schema.define(:version => 20121224040753) do
 
   create_table "magazines", :force => true do |t|
     t.string   "title"
@@ -19,5 +19,18 @@ ActiveRecord::Schema.define(:version => 20121224031416) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "stories", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.string   "link"
+    t.date     "published_at"
+    t.text     "text"
+    t.integer  "magazine_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "stories", ["magazine_id"], :name => "index_stories_on_magazine_id"
 
 end
