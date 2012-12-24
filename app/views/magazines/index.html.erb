@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Title</th>
+    <th>Name</th>
     <th>Website</th>
     <th></th>
     <th></th>
@@ -11,7 +11,7 @@
 
 <% @magazines.each do |magazine| %>
   <tr>
-    <td><%= magazine.title %></td>
+    <td><%= magazine.name %></td>
     <td><%= magazine.website %></td>
     <td><%= link_to 'Show', magazine %></td>
     <td><%= link_to 'Edit', edit_magazine_path(magazine) %></td>

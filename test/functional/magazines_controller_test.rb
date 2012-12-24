@@ -18,7 +18,7 @@ class MagazinesControllerTest < ActionController::TestCase
 
   test "should create magazine" do
     assert_difference('Magazine.count') do
-      post :create, magazine: { title: @magazine.title, website: @magazine.website }
+      post :create, magazine: { name: @magazine.name, website: @magazine.website }
     end
 
     assert_redirected_to magazine_path(assigns(:magazine))
@@ -35,7 +35,7 @@ class MagazinesControllerTest < ActionController::TestCase
   end
 
   test "should update magazine" do
-    put :update, id: @magazine, magazine: { title: @magazine.title, website: @magazine.website }
+    put :update, id: @magazine, magazine: { name: @magazine.name, website: @magazine.website }
     assert_redirected_to magazine_path(assigns(:magazine))
   end
 

@@ -1,7 +1,7 @@
 class CreateMagazines < ActiveRecord::Migration
   def change
     create_table :magazines do |t|
-      t.string :title
+      t.string :name
       t.string :website
 
       t.timestamps
