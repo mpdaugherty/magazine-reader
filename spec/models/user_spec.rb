@@ -41,6 +41,7 @@ describe User do
       example_email = 'abc@example.com'
       User.create({name: "Example User 2", email: example_email})
       user2 = User.new({name: "Example User 3", email: example_email})
+      user2.should_not be_valid
       user2.save().should be_false
     end
   end
