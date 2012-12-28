@@ -38,10 +38,10 @@ describe User do
 
   describe "When the email address is not unique" do
     it "should not allow saving of non-unique emails" do
-      expect {
-        user2 = User.new({name: "Example User 2", email: 'exuser@example.com'})
-        user2.save
-      }.to raise_error
+      example_email = 'abc@example.com'
+      User.create({name: "Example User 2", email: example_email})
+      user2 = User.new({name: "Example User 3", email: example_email})
+      user2.save().should be_false
     end
   end
 end
