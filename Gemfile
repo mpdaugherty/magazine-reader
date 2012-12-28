@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-
 gem 'sqlite3'
+gem 'jquery-rails'
+gem 'haml', '3.1.7'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,10 +18,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-gem 'haml', '3.1.7'
-
 group :development do
   gem 'annotate', '2.5.0'
 end
@@ -27,9 +25,6 @@ end
 group :development, :test do
   gem 'rspec-rails', '2.12.0'
 end
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use debugger
 # gem 'debugger'

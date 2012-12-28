@@ -20,6 +20,7 @@ describe User do
   it { @user.should respond_to(:name) }
   it { @user.should respond_to(:email) }
   it { @user.should be_valid }
+  it { @user.should respond_to(:password_digest) }
 
   describe "When there is no name" do
     before { @user.name = '' }
