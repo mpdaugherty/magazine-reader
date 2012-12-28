@@ -66,6 +66,8 @@ class User < ActiveRecord::Base
 end
 #+END_SRC
 
+** RSpec - More readable testing
+
 * Set up database models & initial RESTful views
 
 ** DONE Magazine
