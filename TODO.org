@@ -35,8 +35,36 @@ Also supports facebook/twitter login through 'Omniauth'.  This is
 what AngelList uses.
 
 However, the Device documentation says that if this is our first app,
-we shouldn't use it...  Maybe I'll skip it for now and write our own
+we shouldn't use it...  I'll skip it for now and write our own
 like in http://ruby.railstutorial.org/chapters/modeling-users
+
+** Annotate - Comments with database schema at top of all models
+
+This is nice because it reminds us what properties a model has.
+
+To use:
+
+#+BEGIN_SRC shell-script
+bundle exec annotate
+#+END_SRC
+
+Example comment:
+#+BEGIN_SRC ruby
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer         not null, primary key
+#  name       :string(255)
+#  email      :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+class User < ActiveRecord::Base
+  attr_accessible :name, :email
+end
+#+END_SRC
 
 * Set up database models & initial RESTful views
 
