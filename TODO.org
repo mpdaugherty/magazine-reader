@@ -27,7 +27,16 @@ So, tasks:
 
 * TODO Look for Gems that we can reuse
 
-** There must be at least some gems for logging users in and out.
+** Devise - User authentication
+
+https://github.com/plataformatec/devise
+
+Also supports facebook/twitter login through 'Omniauth'.  This is
+what AngelList uses.
+
+However, the Device documentation says that if this is our first app,
+we shouldn't use it...  Maybe I'll skip it for now and write our own
+like in http://ruby.railstutorial.org/chapters/modeling-users
 
 * Set up database models & initial RESTful views
 
@@ -60,12 +69,16 @@ Text
 Image (should we download this image?)
 Magazine
 
+** TODO User
+Start with just name and email; I'm following the tutorial at
+http://ruby.railstutorial.org/chapters/modeling-users
+
+#+BEGIN_SRC shell-script
+rails generate model User name:string email:string
+#+END_SRC
 ** TODO Review
 ** TODO Rating
-** TODO User
 ** TODO StoryReadStatus
-
-
 ** TODO Add Logo to Magazine
 ** TODO Add Image to Story
 * TODO Set up User sign up, log in, log out
