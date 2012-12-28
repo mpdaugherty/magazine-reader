@@ -59,5 +59,12 @@ describe User do
       user2.should_not be_valid
       user2.save().should be_false
     end
+
+    it "should not allow saving of duplicate emails regardless of case" do
+      @user.save()
+      user2 = @user.dup
+      user2.email = user2.email.upcase
+      user2.should_not be_valid
+    end
   end
 end
