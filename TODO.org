@@ -27,6 +27,8 @@ So, tasks:
 
 * TODO Look for Gems that we can reuse
 
+http://blog.teamtreehouse.com/10-must-have-ruby-gems
+
 ** Devise - User authentication
 
 https://github.com/plataformatec/devise
@@ -100,12 +102,12 @@ Image (should we download this image?)
 Magazine
 
 ** TODO User
-Start with just name and email; I'm following the tutorial at
+<2012-12-28 Fri> Started with just name and email; I'm following the tutorial at
 http://ruby.railstutorial.org/chapters/modeling-users
 
-#+BEGIN_SRC shell-script
-rails generate model User name:string email:string
-#+END_SRC
+*** TODO Add a sign-in form, etc.
+Can follow next chapters in tutorial
+
 ** TODO Review
 ** TODO Rating
 ** TODO StoryReadStatus
