@@ -67,4 +67,10 @@ describe User do
       user2.should_not be_valid
     end
   end
+
+  it "should convert email addresses to lowercase when saving" do
+    @user.email = 'UPPERCASE@EXAMPLE.CO'
+    @user.save
+    @user.email.should eq 'uppercase@example.co'
+  end
 end
