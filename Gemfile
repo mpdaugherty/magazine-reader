@@ -26,5 +26,10 @@ group :development, :test do
   gem 'rspec-rails', '2.12.0'
 end
 
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl_rails', '4.1.0'
+end
+
 # To use debugger
 # gem 'debugger'
