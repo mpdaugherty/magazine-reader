@@ -2,9 +2,9 @@ MagazineReader::Application.routes.draw do
   get "users/new"
 
   resources :stories
-
-
   resources :magazines
+  resources :users
+  match '/signup',  to: 'users#new'
 
 
   # The priority is based upon order of creation:
