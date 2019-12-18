@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 gem 'sqlite3'
 gem 'jquery-rails'
-gem 'haml', '3.1.7'
+gem 'haml', '5.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 
 # Gems used only for assets and not required
